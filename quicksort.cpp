@@ -9,31 +9,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-/*
-int divide(vector<int> &a,int low,int high)
-{
-    int k = a[low];
-    do{
-        //从右向左检查，如果high的值大于k，则位置中的值正确，high--，继续往前检查，直到遇到一个小于k的值
-        while(low < high && a[high] >= k) --high;
-        //将小于k的值放入low的位置，此时high的位置就空出来了
-        if(low < high)
-        {
-            a[low] = a[high];
-            ++low;
-        }
-        //从low的位置开始从左向右检查，直到遇到一个大于k的值
-        while(low < high && a[low] <= k) ++low;
-        //将low位置的值放入high位置，重复第一步，直到low和high重叠，将k放入此位置；
-        if(low < high)
-        {
-            a[high] = a[low];
-            --high;
-        }
-    }while(low != high);
-    a[low] = k;
-    return low;
-}  */
+
 int divide(vector<int> &a,int low,int high)
 {
     int k = a[low];
